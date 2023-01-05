@@ -1,0 +1,110 @@
+/* variable  */
+:root {
+    --spancolor:#EE005F;
+}
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing:border-box ;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+li {
+    list-style: none;
+}
+a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+.container{
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card {
+    width: 80%;
+    height: 80%;
+    background-image: url(../images/background.png);
+    background-position: center;
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+}
+.card  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.card  header .logo {
+    font-size: 22px;
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+span {
+    color: var(--spancolor);
+}
+.card  header ul {
+    display: flex;
+    justify-content: space-between;
+}
+.card  header ul li {
+    margin: 0 10px;
+}
+.card  header ul li a{
+    font-size: 22px;
+    font-weight: 300;
+    transition: all 0.3s;
+}
+.card  header ul li a:hover  {
+    color: #EE005F;
+}
+.card .text {
+    padding: 25px 15px;
+    width: 40%;
+    text-align: center;
+}
+.card .text h2{
+    color: white;
+}
+.container .contact-icon li {
+    margin: 20px;
+    transition: all ease-in 0.3s;
+}
+.container .contact-icon li a {
+    font-size: 24px;
+    
+}
+.container .contact-icon li:hover{
+    transform: scale(1.2);
+}
+.card .home .text p{
+    color: white;
+    font-size: 28px;
+    margin: 20px;
+}
+@media (max-width:758px) {
+    .card header {
+        flex-direction: column;
+        
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    .container .contact-icon{
+        margin: 30px ; 
+    }
+    .container .contact-icon li{
+        display: inline;
+    }
+}
